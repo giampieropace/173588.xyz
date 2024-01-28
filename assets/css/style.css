@@ -1,0 +1,113 @@
+/* Make the header bg full width, but the content inline with body */
+body > sl-include:has(header) {
+  grid-column: 2 / 3;
+}
+
+body > sl-include > header {
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+body > sl-include > header > *:only-child {
+  margin-block-start: 2rem;
+}
+
+body > sl-include > header h1 {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Add a little padding to ensure spacing is correct between content and header > nav */
+main {
+  padding-top: 1.5rem;
+}
+
+body > sl-include > footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem 1.5rem 1rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+.header__cover {
+  min-width: 100%;
+  max-height: 200px;
+}
+
+@media only screen and (min-width: 720px) {
+  .header__cover {
+    min-width: 100%;
+    max-height: 260px;
+  }
+}
+
+#header__title {
+  display: flex;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  margin-bottom: 0.6rem;
+
+  img {
+    max-width: 6rem;
+    aspect-ratio: 1;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  #header__title {
+    img {
+      max-width: 9rem;
+    }
+  }
+}
+
+header > nav {
+  border-top: 1px solid var(--border);
+  overflow: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #575757 #dfe9eb;
+}
+
+header > nav::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+header > nav::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: #dfe9eb;
+}
+
+header > nav::-webkit-scrollbar-track:hover {
+  background-color: #b8c0c2;
+}
+
+header > nav::-webkit-scrollbar-track:active {
+  background-color: #b8c0c2;
+}
+
+header > nav::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #575757;
+}
+
+header > nav::-webkit-scrollbar-thumb:hover {
+  background-color: #575757;
+}
+
+header > nav::-webkit-scrollbar-thumb:active {
+  background-color: #808080;
+}
+
+@media only screen and (max-width: 720px) {
+  header > nav a {
+    border: 1px solid var(--border);
+    padding: 0.1rem 1rem;
+    text-decoration: none;
+    line-height: 2;
+  }
+}
