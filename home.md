@@ -1,46 +1,7 @@
-This is my new website and it's using Simple.css. It's really cool. If you want to use it too, you can [visit their site](https://simplecss.org/).
+# **👋 Wellcome to my website**
 
-```html
-<p>Just trying a codeblock</p>
-```
+My name is Giampiero, I'm a small business owner living in Italy.
 
-This is a css code block:
+I'm an internet enthusiast, I'm intrested in everithing web related, especially websites development, the indie web and the jamstack.
 
-```css
-/*this is a comment*/
-a {
-  color: red;
-}
-```
-
-This is a JS code block:
-
-```JS
-/* this is a comment */
-
-export class ZeroMd extends HTMLElement {
-  get src() {
-    return this.getAttribute('src')
-  }
-
-  set src(val) {
-    this.reflect('src', val)
-  }
-
-  get manualRender() {
-    return this.hasAttribute('manual-render')
-  }
-
-  set manualRender(val) {
-    this.reflect('manual-render', val)
-  }
-
-  reflect(name, val) {
-    if (val === false) {
-      this.removeAttribute(name)
-    } else {
-      this.setAttribute(name, val === true ? '' : val)
-    }
-  }
-
-```
+I also like to keep myself informed in geopolitical matters.
